@@ -2,22 +2,25 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
-
+body {
+  background-color: blue;
+}
 header {
-  border: 1px solid #000;
   width: 200px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
+header h1 {
+  color: #fff;
+}
 main .container {
-  border: 1px solid #000;
   width: 300px;
   height: 100px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -28,12 +31,43 @@ main .container .bt-iniciar,
 main .container .bt-pausar,
 main .container .bt-parar {
   margin-top: 20px;
-  height: 20px;
+  padding: 10px 0px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 128, 0, 0);
+  border-radius: 3px;
+}
+main .container .bt-iniciar {
+  background-color: rgb(222, 255, 173);
+}
+main .container .bt-iniciar:hover {
+  background-color: rgb(195, 255, 105);
+  font-weight: bold;
+  border: 1px solid rgb(94, 250, 94);
+}
+main .container .bt-pausar{
+  background-color: rgb(255, 186, 186);
+}
+main .container .bt-pausar:hover{
+  background-color: rgb(255, 105, 105);
+  font-weight: bold;
+  border: 1px solid rgb(243, 77, 77);
+  color: #fff;
+}
+main .container .bt-parar{
+  background-color: rgb(143, 140, 140);
+}
+main .container .bt-parar:hover{
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  color: #fff;
 }
 
 .container #contador{
-  margin-left: 105px;
-  
+  margin-left: 95px;
+  color: #fff;
 }
