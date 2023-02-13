@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  border: 1px solid #000;
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .container {
+  border: 1px solid #000;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+}
+
+main .container .bt-iniciar,
+main .container .bt-pausar,
+main .container .bt-parar {
+  margin-top: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container #contador{
+  margin-left: 105px;
+  
+}
